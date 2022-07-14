@@ -1,5 +1,11 @@
+import { Rotas } from '../src/routes';
+
 function App() {
-  return <h2> Hello World!!!</h2>;
+  return (
+    <div className="App">
+      <Rotas />
+    </div>
+  );
 }
 
 export { App };

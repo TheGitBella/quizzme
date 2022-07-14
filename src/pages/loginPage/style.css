@@ -1,0 +1,114 @@
+.login-page {
+    height: 100vh;
+    background-color: #333b65;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-tittle {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: -15px;
+}
+
+input {
+    height: 60px;
+    width: 20vw;
+    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: lighter;
+}
+
+.division {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+
+.retangle {
+    width: 7.6vw;
+    height: 3px;
+    background-color: white;
+}
+
+.or {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.2vw;
+}
+
+.login-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-google, .connect-facebook {
+    width: 20vw;
+    height: 60px;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.connect-google {
+    color: #eb5a4e;
+    border: solid 1px #eb5a4e;
+}
+
+.connect-facebook {
+    color: #475993;
+    border: solid 1px #475993;
+}
+
+.img-connect {
+    height: 40px;
+    margin: 0px 15px;
+}
+
+.cadaster-link {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+}
