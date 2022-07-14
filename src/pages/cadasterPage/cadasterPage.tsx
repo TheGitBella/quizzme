@@ -22,7 +22,7 @@ function CadasterPage() {
           <InputPassword description="Senha" />
           <InputPassword description="Confirme sua senha" />
           <div className="cadaster-submit">
-            <InputSubmit description="Cadastrar-se" />
+            <InputSubmit description="Cadastrar-se" disabled={false} />
           </div>
         </form>
       </div>

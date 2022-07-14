@@ -1,9 +1,17 @@
-import './style.css';
+import { SubmitBtn } from './styled';
 
-function InputSubmit(props: any) {
+interface InputSubmitProps {
+  description: string;
+  bgcolor?: string;
+  disabled?: boolean;
+}
+
+function InputSubmit({ description, bgcolor, disabled }: InputSubmitProps) {
   return (
-    <div className="inputSubmit">
-      <input type="submit" value={props.description} className="submit-btn" />
+    <div>
+      <SubmitBtn type="submit" disabled={disabled}>
+        {description}
+      </SubmitBtn>
     </div>
   );
 }
