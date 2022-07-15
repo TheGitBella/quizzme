@@ -1,11 +1,11 @@
 import { Quizzme } from '../../../assets/images';
 
-import './style.css';
+import { ImgLogo } from './styled';
 
 function Logo() {
   return (
-    <div className="logo">
-      <img src={Quizzme} alt="QuizzMe" className="img-logo" />
+    <div>
+      <ImgLogo src={Quizzme} alt="QuizzMe" />
     </div>
   );
 }

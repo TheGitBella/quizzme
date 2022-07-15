@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const SubmitBtn = styled.button`
-  background-color: #ffc90b;
+interface SubmitButtonProps {
+  color?: string;
+}
+
+export const SubmitBtn = styled.button<SubmitButtonProps>`
+  background-color: ${({ color = '#ffc90b' }) => color};
   color: #5167d5;
   font-weight: bold;
   padding: 0px;

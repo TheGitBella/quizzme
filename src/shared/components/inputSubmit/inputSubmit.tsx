@@ -9,7 +9,7 @@ interface InputSubmitProps {
 function InputSubmit({ description, bgcolor, disabled }: InputSubmitProps) {
   return (
     <div>
-      <SubmitBtn type="submit" disabled={disabled}>
+      <SubmitBtn type="submit" disabled={disabled} color={bgcolor}>
         {description}
       </SubmitBtn>
     </div>

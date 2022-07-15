@@ -1,54 +1,59 @@
 import { Link } from 'react-router-dom';
 
-import {
-  Space,
-  Logo,
-  InputEmail,
-  InputPassword,
-  InputSubmit,
-} from '../../shared/components';
+import { Space, Logo, Input, InputSubmit } from '../../shared/components';
 
 import { Google, Facebook } from '../../assets/images';
 
-import './style.css';
+import {
+  LoginPageCSS,
+  LoginContainer,
+  LoginTittle,
+  LoginForm,
+  LoginDiv,
+  LoginRet,
+  LoginOr,
+  LoginNav,
+  LinkGoogle,
+  LinkFacebook,
+  ImgLink,
+  RegisterLink,
+} from './styled';
 
 function LoginPage() {
   return (
-    <div className="login-page">
+    <LoginPageCSS>
       <Space />
       <Logo />
-      <div className="login-box">
-        <h1 className="login-tittle">Faça Login</h1>
-        <form className="login-form">
-          <InputEmail description="Email" />
-          <InputPassword description="Senha" />
+      <LoginContainer>
+        <LoginTittle>Faça Login</LoginTittle>
+        <LoginForm>
+          <Input type="email" placeholder="Email" />
+          <Input type="password" placeholder="Senha" />
           <InputSubmit description="Logar no Quizz Me!" />
-        </form>
-        <div className="division">
-          <div className="retangle"></div>
-          <p className="or">OU</p>
-          <div className="retangle"></div>
-        </div>
-        <nav className="login-nav">
-          <Link className="connect-google" to="/">
-            <img src={Google} alt="google" className="img-connect" />
+        </LoginForm>
+        <LoginDiv>
+          <LoginRet />
+          <LoginOr>OU</LoginOr>
+          <LoginRet />
+        </LoginDiv>
+        <LoginNav>
+          <LinkGoogle to="/">
+            <ImgLink src={Google} alt="google" />
             Conectar com o google
-          </Link>
-          <Link className="connect-facebook" to="/">
-            <img src={Facebook} alt="facebook" className="img-connect" />
+          </LinkGoogle>
+          <LinkFacebook to="/">
+            <ImgLink src={Facebook} alt="facebook" />
             Conectar com o Facebook
-          </Link>
-        </nav>
-        <div className="division">
-          <div className="retangle"></div>
-          <p className="or">OU</p>
-          <div className="retangle"></div>
-        </div>
-        <Link className="cadaster-link" to="/cadaster">
-          Crie uma conta
-        </Link>
-      </div>
-    </div>
+          </LinkFacebook>
+        </LoginNav>
+        <LoginDiv>
+          <LoginRet></LoginRet>
+          <LoginOr>OU</LoginOr>
+          <LoginRet></LoginRet>
+        </LoginDiv>
+        <RegisterLink href="./">Crie uma conta</RegisterLink>
+      </LoginContainer>
+    </LoginPageCSS>
   );
 }
 
