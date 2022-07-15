@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
 import GlobalStyles from './theme/global';
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from './theme/mui';
 
 interface ApplicationProps {
   children: React.ReactNode;
@@ -7,10 +8,10 @@ interface ApplicationProps {
 
 function Application({ children }: ApplicationProps) {
   return (
-    <Fragment>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       {children}
-    </Fragment>
+    </ThemeProvider>
   );
 }
 
