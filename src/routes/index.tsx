@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { LoginPage, CadasterPage } from '../../src/pages';
+import { LoginPage, CadasterPage, Teste, GridBox } from '../../src/pages';
 import { Layout } from '../../src/pages/design';
 
 function Rotas() {
@@ -10,6 +10,8 @@ function Rotas() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/register" element={<CadasterPage />} />
         <Route path="/design/layout" element={<Layout />} />
+        <Route path="/gridbox" element={<Teste />} />
+        <Route path="/gridbox2" element={<GridBox />} />
       </Routes>
     </BrowserRouter>
   );

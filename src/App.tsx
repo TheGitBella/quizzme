@@ -1,10 +1,11 @@
-import { Rotas } from '../src/routes';
+import { Rotas } from './routes';
+import { Application } from './config';
 
 function App() {
   return (
-    <div className="App">
+    <Application>
       <Rotas />
-    </div>
+    </Application>
   );
 }
 

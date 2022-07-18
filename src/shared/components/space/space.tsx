@@ -1,7 +1,7 @@
-import './style.css';
+import { SpaceDiv } from './styled';
 
 function Space() {
-  return <div className="space"></div>;
+  return <SpaceDiv></SpaceDiv>;
 }
 
 export { Space };
